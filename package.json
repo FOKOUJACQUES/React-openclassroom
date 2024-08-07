@@ -1,6 +1,8 @@
 {
   "name": "la-maison-jungle",
   "version": "0.1.0",
+  "description": "Mon premier projet React;js en suivant la formation sur openclassroom",
+  "author": "FOKOU Duclair",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
