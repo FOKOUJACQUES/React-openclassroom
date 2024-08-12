@@ -1,12 +1,12 @@
 .lmj-boody {
 	position: absolute;
-    padding: 32px;
+	padding: 10px;
 	left: 24%;
 	height: calc(100vh -32px);
     display: flex;
     flex-direction: column;
 	top: 22%;
-	width: 71%;
+	width: 74%;
 }
 
 .lmj-plant-list {
@@ -16,6 +16,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
+	
 }
 .lmj-img{
 	width: 45%;
