@@ -13,25 +13,26 @@ const categories = plantList.reduce(
 );
 
     return (
-        <div>
-			<ul>
-				{categories.map((cat) => (
-					<li key={cat}>{cat}</li>
-				))}
-			</ul>
-        <ul className='lmj-plant-list'>
-            {/* Utilisation la méthode map() pour parcourir la liste des plantes */}
-            {plantList.map((plant) => (
-                <li key={plant.id} className='lmj-plant-item'>
-                    {/* Affichez le nom de la plante */}
-                    {plant.name}
-                    {/* Utilisation d'une condition ternaire pour afficher l'indicateur de meilleures ventes si c'est égal à true afficher ce qui est avant : sinon afficher ce qui est aprés*/}
-                    {plant.isBestSale ? <span>🔥</span> : <span>👎</span>}
-                    <CareScale careType='water' scaleValue={plant.water} />
-					<CareScale careType='light' scaleValue={plant.light} />
-                </li>
-            ))}
-        </ul>
+        <div className='lmj-boody'>
+            <ul>
+                {categories.map((cat) => (
+                    <li key={cat}>{cat}</li>
+                ))}
+            </ul>
+            <ul className='lmj-plant-list'>
+                {/* Utilisation la méthode map() pour parcourir la liste des plantes */}
+                {plantList.map((plant) => (
+                    <li key={plant.id} className='lmj-plant-item'>
+                        {/* Affichez le nom de la plante */}
+                        <img className='lmj-img' src={plant.PlayerImageURL} alt={plant.name} /><br/>
+                        {plant.name}
+                        {/* Utilisation d'une condition ternaire pour afficher l'indicateur de meilleures ventes si c'est égal à true afficher ce qui est avant : sinon afficher ce qui est aprés*/}
+                        {plant.isBestSale ? <span>🔥</span> : <span>👎</span>}
+                        <CareScale careType='water' scaleValue={plant.water} />
+                        <CareScale careType='light' scaleValue={plant.light} />
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }

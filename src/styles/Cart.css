@@ -1,5 +1,8 @@
-.lmj-cart{
+.lmj-cart {
     padding: 32px;
     background-color: #31b572;
     color: white;
+    height: calc(100vh - 32px); /* 80 % de la hauteur de la fenêtre moins la marge de 32px */
+    width: 20%;
+    flex: 20;
 }

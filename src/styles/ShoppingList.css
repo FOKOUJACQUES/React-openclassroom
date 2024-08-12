@@ -1,7 +1,23 @@
+.lmj-boody {
+	position: absolute;
+    padding: 32px;
+	left: 24%;
+	height: calc(100vh -32px);
+    display: flex;
+    flex-direction: column;
+	top: 22%;
+	width: 71%;
+}
+
 .lmj-plant-list {
-	list-style-type: none;
-	padding: 32px;
-	display: flex;
+	margin-left: 10%;
+    list-style-type: none;
 	flex-wrap: wrap;
-	max-width: 800px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+.lmj-img{
+	width: 45%;
+	height: 45%;
 }

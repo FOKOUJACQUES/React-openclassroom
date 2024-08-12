@@ -1,0 +1,14 @@
+.lmj-QFrom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.clients{
+    font-size: 22px;
+    font-weight: bold;
+}
+label{
+    font-size: 18px;
+}
